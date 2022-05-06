@@ -3,6 +3,8 @@ package omer.bitikcioglu.homework;
 /**
  * This class contains the prices of the coffees.
  *
+ * This can be edited easily for future price updates.
+ *
  * @author Ömer Faruk Bitikçioğlu
  */
 public class CoffeePrices {

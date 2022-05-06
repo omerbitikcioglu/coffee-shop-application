@@ -1,7 +1,6 @@
 package omer.bitikcioglu.homework;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 
 /**
  * Coffee Machine Class
@@ -11,10 +10,13 @@ import java.util.HashSet;
 public class CoffeeMachine {
 
     /**
-     * The coffees that machine can produce
+     * The coffee types the machine can produce.
      */
     private final ArrayList<Coffee> coffees = new ArrayList<>();
 
+    /**
+     * Constructor for coffee machine class.
+     */
     public CoffeeMachine() {
 
         Coffee c1 = new Coffee(1,"Espresso", CoffeePrices.ESPRESSO);
@@ -25,18 +27,44 @@ public class CoffeeMachine {
         Coffee c6 = new Coffee(6,"Americano", CoffeePrices.AMERICANO);
         Coffee c7 = new Coffee(7,"Hot Water", CoffeePrices.HOT_WATER);
 
-        coffees.add(c1);
-        coffees.add(c2);
-        coffees.add(c3);
-        coffees.add(c4);
-        coffees.add(c5);
-        coffees.add(c6);
-        coffees.add(c7);
+        addCoffee(c1);
+        addCoffee(c2);
+        addCoffee(c3);
+        addCoffee(c4);
+        addCoffee(c5);
+        addCoffee(c6);
+        addCoffee(c7);
     }
 
+    /**
+     * Getter for count of coffee types.
+     *
+     * @return The number of coffee types in the machine
+     */
+    public int getNumOfCoffees() {
+        return coffees.size();
+    }
+
+    /**
+     * Add coffee type to the machine.
+     *
+     * If the coffee already exists in the machine,
+     * it does not allow it to be added.
+     *
+     * @param c The coffee type to be added.
+     */
+    private void addCoffee(Coffee c) {
+        if (!(coffees.contains(c))) {
+            coffees.add(c);
+        }
+    }
+
+    /**
+     * Show the list of coffee types in the machine.
+     */
     public void showCoffees() {
         for (Coffee coffee: coffees) {
-            System.out.println(coffee);
+            System.out.println(coffee.getCoffeeId() + ". " + coffee);
         }
     }
 }

@@ -15,8 +15,7 @@ public class Coffee {
     /**
      * Name of the coffee
      */
-    private String name;
-
+    private final String name;
 
     /**
      * Price of the coffee

@@ -1,5 +1,7 @@
 package omer.bitikcioglu.homework;
 
+import omer.bitikcioglu.homework.coffees.*;
+
 import java.util.ArrayList;
 
 /**
@@ -19,13 +21,13 @@ public class CoffeeMachine {
      */
     public CoffeeMachine() {
 
-        Coffee c1 = new Coffee(1,"Espresso", CoffeePrices.ESPRESSO);
-        Coffee c2 = new Coffee(2,"Double Espresso", CoffeePrices.DOUBLE_ESPRESSO);
-        Coffee c3 = new Coffee(3,"Cappuccino", CoffeePrices.CAPPUCCINO);
-        Coffee c4 = new Coffee(4,"Caffe Latte", CoffeePrices.CAFFE_LATTE);
-        Coffee c5 = new Coffee(5,"Mocha", CoffeePrices.MOCHA);
-        Coffee c6 = new Coffee(6,"Americano", CoffeePrices.AMERICANO);
-        Coffee c7 = new Coffee(7,"Hot Water", CoffeePrices.HOT_WATER);
+        Coffee c1 = new Espresso(1);
+        Coffee c2 = new Doppio(2);
+        Coffee c3 = new Cappuccino(3);
+        Coffee c4 = new Latte(4);
+        Coffee c5 = new Mocha(5);
+        Coffee c6 = new Americano(6);
+        Coffee c7 = new HotWater(7);
 
         addCoffee(c1);
         addCoffee(c2);
@@ -47,7 +49,7 @@ public class CoffeeMachine {
 
     /**
      * Add coffee type to the machine.
-     *
+     * <p>
      * If the coffee already exists in the machine,
      * it does not allow it to be added.
      *
@@ -63,7 +65,7 @@ public class CoffeeMachine {
      * Show the list of coffee types in the machine.
      */
     public void showCoffees() {
-        for (Coffee coffee: coffees) {
+        for (Coffee coffee : coffees) {
             System.out.println(coffee.getCoffeeId() + ". " + coffee);
         }
     }

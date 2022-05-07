@@ -45,6 +45,15 @@ public class Coffee {
     }
 
     /**
+     * Getter for coffee name
+     *
+     * @return Name of the coffee
+     */
+    public String getCoffeeName() {
+        return name;
+    }
+
+    /**
      * Compares two coffee objects.
      *
      * @param obj The coffee object to be compared
@@ -73,5 +82,9 @@ public class Coffee {
     @Override
     public String toString() {
         return name + '(' + price + "₺)";
+    }
+
+    public String getRecipe() {
+        return "1x Coffee";
     }
 }

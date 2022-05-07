@@ -15,6 +15,12 @@ public class Main {
         int order = getCoffeeOrder(cm.getNumOfCoffees());
         if (order == -1) return; // Error
         System.out.println("Teşekkürler kahveniz hazırlanıyor.");
+
+        // Prepare the order and give information
+        Coffee orderedCoffee = cm.getCoffee(order);
+        System.out.println(orderedCoffee.getCoffeeName() + " seçtiniz. " +
+                "Bu içeceğimiz " + orderedCoffee.getRecipe() + " içermektedir." +
+                " Afiyet olsun.");
     }
 
     /**

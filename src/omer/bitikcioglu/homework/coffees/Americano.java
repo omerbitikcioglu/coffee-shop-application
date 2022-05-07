@@ -18,6 +18,7 @@ public class Americano extends Coffee {
         super(id, "Americano", CoffeePrices.AMERICANO);
     }
 
+    @Override
     public String getRecipe() {
         return "1x Espresso ve 4x Hot Water";
     }

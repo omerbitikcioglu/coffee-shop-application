@@ -18,6 +18,7 @@ public class Espresso extends Coffee {
         super(id, "Espresso", CoffeePrices.ESPRESSO);
     }
 
+    @Override
     public String getRecipe() {
         return "1x Espresso";
     }

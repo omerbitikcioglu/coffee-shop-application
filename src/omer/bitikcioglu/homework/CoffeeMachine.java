@@ -69,4 +69,14 @@ public class CoffeeMachine {
             System.out.println(coffee.getCoffeeId() + ". " + coffee);
         }
     }
+
+    /**
+     * Returns the coffee with the given id
+     *
+     * @param coffeeId The id of the coffee to be returned
+     * @return The coffee with the given id
+     */
+    public Coffee getCoffee(int coffeeId) {
+        return coffees.get(coffeeId);
+    }
 }

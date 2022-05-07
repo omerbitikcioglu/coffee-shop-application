@@ -18,6 +18,7 @@ public class Cappuccino extends Coffee {
         super(id, "Cappuccino", CoffeePrices.CAPPUCCINO);
     }
 
+    @Override
     public String getRecipe() {
         return "1x Espresso, 2x Steamed Milk ve 2x Milk Foam";
     }

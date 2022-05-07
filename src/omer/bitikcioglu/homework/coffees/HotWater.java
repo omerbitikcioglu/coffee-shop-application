@@ -21,6 +21,7 @@ public class HotWater extends Coffee {
         super(id, "HotWater", CoffeePrices.HOT_WATER);
     }
 
+    @Override
     public String getRecipe() {
         return "5x Hot Water";
     }

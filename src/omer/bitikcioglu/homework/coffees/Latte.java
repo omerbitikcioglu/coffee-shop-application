@@ -18,6 +18,11 @@ public class Latte extends Coffee {
         super(id, "Caffe Latte", CoffeePrices.CAFFE_LATTE);
     }
 
+    /**
+     * Gets recipe of the coffee.
+     *
+     * @return Cafe Latte recipe
+     */
     @Override
     public String getRecipe() {
         return "1x Espresso, 3x Steamed Milk ve 1x Milk Foam";

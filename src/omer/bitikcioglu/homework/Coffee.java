@@ -10,7 +10,7 @@ public class Coffee {
     /**
      * ID of the coffee
      */
-    private int id;
+    private final int id;
 
     /**
      * Name of the coffee
@@ -20,7 +20,7 @@ public class Coffee {
     /**
      * Price of the coffee
      */
-    private int price;
+    private final int price;
 
     /**
      * Constructor for Coffee class.
@@ -69,8 +69,7 @@ public class Coffee {
             return false;
         }
         Coffee c = (Coffee) obj;
-        return this.id == c.id &&
-                this.name.equals(c.name) &&
+        return this.name.equals(c.name) &&
                 this.price == c.price;
     }
 
@@ -81,9 +80,15 @@ public class Coffee {
      */
     @Override
     public String toString() {
-        return name + '(' + price + "₺)";
+        return id + ". " + name + '(' + price + "₺)";
     }
 
+    /**
+     * This method gives the recipe of the coffee.
+     * In this generic form, there is no recipe but child classes will have one.
+     *
+     * @return The recipe of the coffee
+     */
     public String getRecipe() {
         return "1x Coffee";
     }

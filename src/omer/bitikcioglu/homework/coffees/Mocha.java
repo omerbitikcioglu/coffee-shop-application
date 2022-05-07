@@ -18,6 +18,11 @@ public class Mocha extends Coffee {
         super(id, "Mocha", CoffeePrices.MOCHA);
     }
 
+    /**
+     * Gets recipe of the coffee.
+     *
+     * @return Mocha recipe
+     */
     @Override
     public String getRecipe() {
         return "1x Espresso, 1x Steamed Milk, 1x Milk Foam ve 2x Hot Chocolate";

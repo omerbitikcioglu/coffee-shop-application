@@ -18,6 +18,11 @@ public class Doppio extends Coffee {
         super(id, "Double Espresso", CoffeePrices.DOUBLE_ESPRESSO);
     }
 
+    /**
+     * Gets recipe of the coffee.
+     *
+     * @return Doppio recipe
+     */
     @Override
     public String getRecipe() {
         return "2x Espresso";

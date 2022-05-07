@@ -66,7 +66,7 @@ public class CoffeeMachine {
      */
     public void showCoffees() {
         for (Coffee coffee : coffees) {
-            System.out.println(coffee.getCoffeeId() + ". " + coffee);
+            System.out.println(coffee);
         }
     }
 
@@ -77,6 +77,6 @@ public class CoffeeMachine {
      * @return The coffee with the given id
      */
     public Coffee getCoffee(int coffeeId) {
-        return coffees.get(coffeeId);
+        return coffees.get(coffeeId-1);
     }
 }

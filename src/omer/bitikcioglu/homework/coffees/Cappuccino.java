@@ -18,6 +18,11 @@ public class Cappuccino extends Coffee {
         super(id, "Cappuccino", CoffeePrices.CAPPUCCINO);
     }
 
+    /**
+     * Gets recipe of the coffee.
+     *
+     * @return Cappuccino recipe
+     */
     @Override
     public String getRecipe() {
         return "1x Espresso, 2x Steamed Milk ve 2x Milk Foam";

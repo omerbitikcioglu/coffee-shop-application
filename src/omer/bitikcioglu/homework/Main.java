@@ -17,7 +17,7 @@ public class Main {
         System.out.println("Teşekkürler kahveniz hazırlanıyor.");
 
         // Prepare the order and give information
-        Coffee orderedCoffee = cm.getCoffee(order);
+        Coffee orderedCoffee = cm.getCoffee(order-1);
         System.out.println(orderedCoffee.getCoffeeName() + " seçtiniz. " +
                 "Bu içeceğimiz " + orderedCoffee.getRecipe() + " içermektedir." +
                 " Afiyet olsun.");

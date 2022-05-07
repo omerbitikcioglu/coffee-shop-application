@@ -1,7 +1,7 @@
 package omer.bitikcioglu.homework;
 
 /**
- * Coffee Class
+ * This class represents the coffee types in the machine.
  *
  * @author Ömer Faruk Bitikçioğlu
  */
@@ -54,7 +54,8 @@ public class Coffee {
     }
 
     /**
-     * Compares two coffee objects.
+     * Compares two coffee objects with respect to their name and prices.
+     * If two of them has the same name and price, then it returns true.
      *
      * @param obj The coffee object to be compared
      * @return True if the two coffee object are equal
@@ -74,7 +75,8 @@ public class Coffee {
     }
 
     /**
-     * Helps to print out coffee object with its name and price
+     * Helps to print out coffee object with its id, name and price.
+     * For instance: 1. Cappuccino(12TL)
      *
      * @return The string representation of the coffee
      */

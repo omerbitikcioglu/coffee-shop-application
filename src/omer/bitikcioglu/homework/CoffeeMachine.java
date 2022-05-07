@@ -5,7 +5,7 @@ import omer.bitikcioglu.homework.coffees.*;
 import java.util.ArrayList;
 
 /**
- * Coffee Machine Class
+ * This class represents the coffee machine itself.
  *
  * @author Ömer Faruk Bitikçioğlu
  */

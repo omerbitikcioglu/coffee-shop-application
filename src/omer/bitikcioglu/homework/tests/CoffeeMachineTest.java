@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Add some description here.
+ * Test Class for CoffeeMachineTest class.
  *
  * @author Ömer Faruk Bitikçioğlu
  */
